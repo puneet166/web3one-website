@@ -75,7 +75,7 @@ export default function IndustriesPage() {
   return (
     <section className="relative py-32 bg-[#0b1120] overflow-hidden">
 
-      {/* Background Glow */}
+      Background Glow
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-[900px] h-[900px] bg-purple-600/20 blur-3xl rounded-full top-[-300px] left-[-200px]" />
         <div className="absolute w-[900px] h-[900px] bg-blue-600/20 blur-3xl rounded-full bottom-[-300px] right-[-200px]" />
