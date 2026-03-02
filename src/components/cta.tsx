@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function CTA() {
   return (
-    <section className="relative py-40 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-10 bg-[#0b1120] overflow-hidden">
 
       {/* Animated Background Glow */}
       <div className="absolute inset-0 -z-10">

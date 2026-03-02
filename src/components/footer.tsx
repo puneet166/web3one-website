@@ -6,36 +6,41 @@ import { Linkedin, Twitter, Github, ArrowRight } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#0b1120] border-t border-white/10 mt-40 overflow-hidden">
+    <footer className="relative bg-[#0b1120] border-t border-white/10 mt-24 overflow-hidden">
 
-      {/* Background Gradient Glow */}
-      <div className="absolute inset-0 -z-10">
+      {/* Background Glow */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute w-[700px] h-[700px] bg-blue-600/10 blur-3xl rounded-full top-[-250px] left-[-200px]" />
         <div className="absolute w-[700px] h-[700px] bg-purple-600/10 blur-3xl rounded-full bottom-[-250px] right-[-200px]" />
       </div>
 
-      {/* CTA Section */}
-      <div className="max-w-6xl mx-auto px-6 pt-24 pb-16 text-center border-b border-white/10">
+      {/* ===== CTA SECTION ===== */}
+      <div className="max-w-7xl mx-auto px-6 pt-20 pb-16 text-center border-b border-white/10">
         <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-          Let’s Build Secure Web3 Infrastructure
+          Let’s Architect Secure Web3 Infrastructure
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-          Partner with Web3One to architect scalable blockchain systems,
-          production-grade smart contracts, and enterprise-ready decentralized applications.
+
+        <p className="text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+          Partner with Web3One to design scalable blockchain systems,
+          institutional-grade smart contracts, and enterprise-ready
+          decentralized applications.
         </p>
+
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-lg text-white font-medium"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-xl 
+          bg-gradient-to-r from-blue-600 to-purple-600 
+          hover:opacity-90 transition font-medium shadow-lg"
         >
-          Start a Project
+          Schedule Strategy Call
           <ArrowRight size={16} />
         </Link>
       </div>
 
-      {/* Main Grid */}
-      <div className="max-w-6xl mx-auto px-6 py-20 grid gap-16 lg:grid-cols-5">
+      {/* ===== MAIN GRID ===== */}
+      <div className="max-w-7xl mx-auto px-6 py-16 grid gap-14 md:grid-cols-2 lg:grid-cols-5">
 
-        {/* Brand Section */}
+        {/* Brand */}
         <div className="lg:col-span-2">
           <Link href="/" className="inline-block mb-6">
             <Image
@@ -48,16 +53,16 @@ export default function Footer() {
           </Link>
 
           <p className="text-gray-400 leading-relaxed text-sm max-w-md">
-            Web3One is a Web3 engineering company delivering secure smart contracts,
-            scalable decentralized applications, and enterprise blockchain infrastructure
-            for global organizations.
+            Web3One is a global Web3 engineering firm delivering
+            secure, scalable, and compliance-aware blockchain
+            infrastructure for startups and institutions.
           </p>
 
           <p className="text-gray-500 text-sm mt-6">
-            Engineering secure systems. Designing for scale.
+            Built for security. Designed for scale.
           </p>
 
-          {/* Social Icons */}
+          {/* Social */}
           <div className="flex gap-4 mt-8 text-gray-400">
             <a href="#" className="hover:text-blue-400 transition">
               <Linkedin size={18} />
@@ -73,7 +78,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="font-semibold mb-6 text-white">Services</h4>
+          <h4 className="font-semibold mb-5 text-white">Services</h4>
           <ul className="space-y-3 text-sm text-gray-400">
             <li>
               <Link href="/services/smart-contracts" className="hover:text-blue-400 transition">
@@ -87,12 +92,12 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/services/nft-platforms" className="hover:text-blue-400 transition">
-                NFT & Digital Asset Platforms
+                Digital Asset Platforms
               </Link>
             </li>
             <li>
               <Link href="/services/enterprise-apps" className="hover:text-blue-400 transition">
-                Enterprise Web Applications
+                Enterprise Applications
               </Link>
             </li>
           </ul>
@@ -100,11 +105,11 @@ export default function Footer() {
 
         {/* Company */}
         <div>
-          <h4 className="font-semibold mb-6 text-white">Company</h4>
+          <h4 className="font-semibold mb-5 text-white">Company</h4>
           <ul className="space-y-3 text-sm text-gray-400">
             <li>
               <Link href="/about" className="hover:text-blue-400 transition">
-                About Us
+                About
               </Link>
             </li>
             <li>
@@ -118,8 +123,8 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="hover:text-blue-400 transition">
-                Blog
+              <Link href="/insights" className="hover:text-blue-400 transition">
+                Insights
               </Link>
             </li>
           </ul>
@@ -127,9 +132,9 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h4 className="font-semibold mb-6 text-white">Contact</h4>
+          <h4 className="font-semibold mb-5 text-white">Contact</h4>
 
-          <p className="text-sm text-gray-400 mb-4">
+          <p className="text-sm text-gray-400 mb-3">
             <a href="mailto:info@web3one.in" className="hover:text-blue-400 transition">
               info@web3one.in
             </a>
@@ -141,9 +146,9 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* ===== BOTTOM BAR ===== */}
       <div className="border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between text-gray-500 text-sm gap-4">
+        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between text-gray-500 text-sm gap-4">
 
           <p className="text-center md:text-left">
             © {new Date().getFullYear()} Web3One. All rights reserved.

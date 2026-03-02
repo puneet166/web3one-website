@@ -3,30 +3,36 @@ import type { Metadata } from "next"
 import WhatsAppButton from "@/components/whatsapp"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import ContactFloating from "@/components/contact-floating"
 
-import { Inter,Space_Grotesk } from "next/font/google"
+import { Inter, Space_Grotesk } from "next/font/google"
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-heading" })
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://web3one.in"),
+
   title: {
-    default: "Web3One | Blockchain Development Company",
+    default: "Web3One | Global Web3 & Blockchain Infrastructure Company",
     template: "%s | Web3One",
   },
+
   description:
-    "Web3One is a leading blockchain and Web3 development company delivering smart contracts, dApps, NFT platforms and enterprise web applications.",
+    "Web3One is a global Web3 and blockchain infrastructure company delivering Layer 1 & Layer 2 development, exchanges, smart contracts, RWA tokenization, AI agents, and enterprise-grade blockchain systems.",
+
   keywords: [
-    "blockchain development company in India",
-    "web3 development India",
-    "smart contract development India",
-    "dApp development company India",
+    "Web3 infrastructure company",
+    "Layer 1 blockchain development",
+    "Layer 2 development",
+    "crypto exchange development",
+    "RWA tokenization platform",
+    "smart contract development",
+    "blockchain infrastructure services",
+    "DeFi development company",
   ],
-   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
-    alternates: {
+
+  alternates: {
     canonical: "https://web3one.in",
   },
 
@@ -34,30 +40,41 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+
+ icons: {
+  icon: [
+    { url: "/favicon.ico" },
+    { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+  ],
+  apple: [
+    { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+  ],
+},
+
   openGraph: {
-    title: "Web3One - Web3 Infrastructure for World",
+    title: "Web3One | Institutional-Grade Web3 Infrastructure",
     description:
-      "Enterprise-grade blockchain development services tailored for startups and enterprises.",
+      "Building mission-critical Web3 infrastructure including Layer 1, Layer 2, exchanges, DeFi systems, tokenization platforms, and enterprise blockchain solutions.",
     url: "https://web3one.in",
     siteName: "Web3One",
-    locale: "en_IN",
+    locale: "en_US",
     type: "website",
- 
     images: [
       {
         url: "https://web3one.in/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Web3One Blockchain Development",
+        alt: "Web3One Web3 Infrastructure",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Web3One - Blockchain Development Company",
+    title: "Web3One | Global Web3 Infrastructure Company",
     description:
-      "Smart contracts, dApps, NFT platforms & Web3 infrastructure.",
+      "Layer 1 & Layer 2 development, exchanges, RWA tokenization, AI agents, and enterprise blockchain infrastructure.",
     images: ["https://web3one.in/og-image.jpg"],
   },
 }
@@ -69,8 +86,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${space.variable} bg-[#0B0F1A] text-white antialiased`}>
+      <body
+        className={`${inter.variable} ${space.variable} bg-[#0B0F1A] text-white antialiased`}
+      >
         <Navbar />
+
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -80,17 +101,21 @@ export default function RootLayout({
               name: "Web3One",
               url: "https://web3one.in",
               logo: "https://web3one.in/logo.png",
+              description:
+                "Global Web3 infrastructure engineering company delivering Layer 1, Layer 2, DeFi, exchanges, and enterprise blockchain systems.",
               sameAs: [],
               address: {
                 "@type": "PostalAddress",
-                addressCountry: "India",
+                addressCountry: "Global",
               },
             }),
           }}
         />
+
         {children}
+
         <Footer />
-        <WhatsAppButton />
+<ContactFloating />
       </body>
     </html>
   )

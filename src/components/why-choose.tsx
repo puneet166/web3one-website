@@ -32,7 +32,7 @@ const reasons = [
 
 export default function WhyChoose() {
   return (
-    <section className="relative py-32 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-24 bg-[#0b1120] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
