@@ -19,7 +19,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative py-20 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-20 bg-white dark:bg-[#0b1120] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
@@ -37,7 +37,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <p className="text-sm tracking-widest uppercase text-gray-400 mb-4">
+          <p className="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-4">
             Client Success Stories
           </p>
 
@@ -45,7 +45,7 @@ export default function Testimonials() {
             Trusted by Founders & Technology Leaders
           </h2>
 
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 mt-6 max-w-2xl mx-auto">
             We collaborate with startups and enterprises to build secure,
             scalable, and production-ready Web3 infrastructure.
           </p>
@@ -62,7 +62,7 @@ export default function Testimonials() {
               transition={{ delay: index * 0.1, duration: 0.6 }}
               viewport={{ once: true }}
               whileHover={{ y: -6 }}
-              className="relative p-10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:border-purple-500/40 hover:bg-white/10"
+              className="relative p-10 rounded-2xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 backdrop-blur-xl transition-all duration-300 hover:border-purple-500/40 hover:bg-white/10"
             >
               {/* Quote Mark */}
               <div className="text-5xl text-blue-500/30 font-serif absolute top-6 left-6">
@@ -70,16 +70,16 @@ export default function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-gray-300 leading-relaxed relative z-10">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed relative z-10">
                 {item.quote}
               </p>
 
               {/* Client Info */}
-              <div className="mt-8 border-t border-white/10 pt-6">
-                <h4 className="font-semibold text-white">
+              <div className="mt-8 border-t border-gray-200 dark:border-white/10 pt-6">
+                <h4 className="font-semibold text-gray-900 dark:text-white">
                   {item.name}
                 </h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
                   {item.role}
                 </p>
               </div>

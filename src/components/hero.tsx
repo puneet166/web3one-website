@@ -4,7 +4,7 @@ import NetworkVisual from "./NetworkVisual"
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-16 px-6 overflow-hidden bg-[#0b1120]">
+    <section className="relative pt-32 pb-16 px-6 overflow-hidden bg-white dark:bg-[#0b1120]">
 
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
@@ -32,7 +32,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-gray-400 text-lg leading-relaxed mb-10"
+            className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-10"
           >
             We partner with startups, crypto founders, and institutions to design,
             develop, and deploy secure, scalable, and regulation-aware blockchain
@@ -51,20 +51,20 @@ export default function Hero() {
               Schedule Strategy Call
             </button>
 
-            <button className="px-8 py-4 border border-gray-600 rounded-xl hover:bg-gray-800 transition">
+            <button className="px-8 py-4 border border-gray-300 dark:border-white/20 rounded-xl hover:bg-gray-200 dark:hover:bg-white/10 transition">
               Explore Our Capabilities
             </button>
           </motion.div>
 
           {/* Authority Signals */}
-          <div className="flex flex-wrap gap-6 text-xs text-gray-500 mt-12 uppercase tracking-wider">
+         <div className="flex flex-wrap gap-6 text-xs text-gray-500 dark:text-gray-400 mt-12 uppercase tracking-wider">
             <span>Security-First Architecture</span>
             <span>Fintech Infrastructure</span>
             <span>Cross-Chain Systems</span>
             <span>Enterprise Deployment</span>
           </div>
 
-          <p className="text-sm text-gray-500 mt-6">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-6">
             Serving USA • Singapore • UAE • Global Markets
           </p>
 
@@ -83,10 +83,10 @@ export default function Hero() {
 
             {/* Overlay Text */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 pointer-events-none px-6">
-              <p className="text-gray-400 text-xs mb-4 uppercase tracking-widest">
+              <p className="text-gray-600 dark:text-gray-400 text-xs mb-4 uppercase tracking-widest">
                 Infrastructure Focus
               </p>
-              <h3 className="text-lg font-semibold text-white leading-snug max-w-xs">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white leading-snug max-w-xs">
                 Smart Contracts • DeFi • Tokenization • Enterprise Web3 Systems
               </h3>
             </div>

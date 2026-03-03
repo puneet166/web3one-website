@@ -17,7 +17,7 @@ export default function BlogPage() {
               </Link>
             </h2>
 
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
               {post.description}
             </p>
 

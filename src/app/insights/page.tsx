@@ -52,7 +52,7 @@ const articles = [
 
 export default function InsightsPage() {
   return (
-    <section className="relative py-32 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-32 bg-white dark:bg-[#0b1120] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
@@ -64,7 +64,7 @@ export default function InsightsPage() {
 
         {/* HERO */}
         <div className="max-w-4xl mb-24">
-          <p className="text-sm tracking-widest uppercase text-gray-400 mb-4">
+          <p className="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-4">
             Research & Insights
           </p>
 
@@ -72,7 +72,7 @@ export default function InsightsPage() {
             Institutional Research & Engineering Intelligence for Web3
           </h1>
 
-          <p className="text-gray-400 text-lg leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
             Technical briefings, architecture deep-dives, and security
             frameworks designed for founders, institutions, and
             infrastructure leaders building mission-critical blockchain systems.
@@ -83,17 +83,17 @@ export default function InsightsPage() {
         <motion.div
           whileHover={{ y: -6 }}
           transition={{ type: "spring", stiffness: 200 }}
-          className="mb-32 p-12 rounded-3xl border border-white/10 bg-gradient-to-r from-blue-600/10 to-purple-600/10 backdrop-blur-xl"
+          className="mb-32 p-12 rounded-3xl border border-gray-200 dark:border-white/10 bg-gradient-to-r from-blue-600/10 to-purple-600/10 backdrop-blur-xl"
         >
           <div className="text-sm uppercase tracking-wide text-blue-400 mb-4">
             {featuredArticle.tag} • {featuredArticle.readTime}
           </div>
 
-          <h2 className="text-3xl font-semibold text-white mb-6">
+          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-6">
             {featuredArticle.title}
           </h2>
 
-          <p className="text-gray-400 mb-8 max-w-3xl">
+          <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-3xl">
             {featuredArticle.description}
           </p>
 
@@ -112,17 +112,17 @@ export default function InsightsPage() {
               key={index}
               whileHover={{ y: -6 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg hover:border-blue-500/40 transition"
+              className="p-8 rounded-2xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 backdrop-blur-lg hover:border-blue-500/40 transition"
             >
-              <div className="text-xs uppercase tracking-wide text-gray-500 mb-3">
+              <div className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-3">
                 {article.category} • {article.readTime}
               </div>
 
-              <h3 className="text-white font-semibold mb-4">
+              <h3 className="text-gray-900 dark:text-white font-semibold mb-4">
                 {article.title}
               </h3>
 
-              <p className="text-gray-400 text-sm mb-6">
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-6">
                 {article.desc}
               </p>
 
@@ -137,12 +137,12 @@ export default function InsightsPage() {
         </div>
 
         {/* EXECUTIVE CTA */}
-        <div className="mt-40 text-center p-16 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl">
-          <h2 className="text-3xl font-semibold text-white mb-6">
+        <div className="mt-40 text-center p-16 rounded-3xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 backdrop-blur-xl">
+          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-6">
             Receive Institutional Web3 Intelligence
           </h2>
 
-          <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
             Subscribe to our executive brief for architecture updates,
             security advisories, and blockchain infrastructure research
             curated for founders and institutional leaders.
@@ -150,7 +150,7 @@ export default function InsightsPage() {
 
           <Link
             href="/contact"
-            className="px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg hover:opacity-90 transition font-medium"
+            className="px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg hover:opacity-90 transition font-medium"
           >
             Subscribe to Executive Brief
           </Link>

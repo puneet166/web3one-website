@@ -31,7 +31,7 @@ const capabilities = [
 
 export default function About() {
   return (
-    <section className="relative py-32 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-32 bg-white dark:bg-[#0b1120] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
@@ -49,7 +49,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mb-28"
         >
-          <p className="text-sm tracking-widest uppercase text-gray-400 mb-4">
+          <p className="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-4">
             About Web3One
           </p>
 
@@ -57,14 +57,14 @@ export default function About() {
             Institutional-Grade Blockchain Infrastructure Partner
           </h1>
 
-          <p className="text-gray-400 text-lg leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
             Web3One is a global blockchain engineering firm delivering
             secure, scalable, and regulation-aware infrastructure
             powering exchanges, digital asset platforms, and
             next-generation financial systems.
           </p>
 
-          <div className="mt-8 text-gray-500 text-sm tracking-wide uppercase">
+          <div className="mt-8 text-gray-500 dark:text-gray-400 text-sm tracking-wide uppercase">
             Operating Across USA • Singapore • UAE • Global Markets
           </div>
         </motion.div>
@@ -78,10 +78,10 @@ export default function About() {
             { value: "100%", label: "Security-First Framework" },
           ].map((stat, i) => (
             <div key={i}>
-              <h3 className="text-4xl font-bold text-white mb-2">
+              <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
                 {stat.value}
               </h3>
-              <p className="text-gray-400 text-sm uppercase tracking-wide">
+              <p className="text-gray-600 dark:text-gray-400 text-sm uppercase tracking-wide">
                 {stat.label}
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function About() {
         </div>
 
         {/* STRATEGIC POSITIONING */}
-        <div className="max-w-4xl text-gray-400 text-lg leading-relaxed mb-32 space-y-8">
+        <div className="max-w-4xl text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-32 space-y-8">
           <p>
             We operate at the intersection of blockchain protocol design,
             fintech infrastructure, and enterprise systems engineering.
@@ -108,7 +108,7 @@ export default function About() {
 
         {/* CORE CAPABILITIES */}
         <div className="mb-40">
-          <h2 className="text-3xl font-semibold text-white mb-14">
+          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-14">
             Core Engineering Capabilities
           </h2>
 
@@ -118,12 +118,12 @@ export default function About() {
                 key={index}
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 200 }}
-                className="p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-blue-500/40 transition"
+                className="p-10 rounded-3xl bg-gray-100 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 hover:border-blue-500/40 transition"
               >
-                <h3 className="text-white text-xl font-semibold mb-4">
+                <h3 className="text-gray-900 dark:text-white text-xl font-semibold mb-4">
                   {item.title}
                 </h3>
-                <p className="text-gray-400">{item.desc}</p>
+                <p className="text-gray-600 dark:text-gray-400">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -131,11 +131,11 @@ export default function About() {
 
         {/* OPERATING MODEL */}
         <div className="mb-40">
-          <h2 className="text-3xl font-semibold text-white mb-10">
+          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-10">
             Our Operating Model
           </h2>
 
-          <div className="grid md:grid-cols-4 gap-8 text-gray-400 text-sm uppercase tracking-wide text-center">
+          <div className="grid md:grid-cols-4 gap-8 text-gray-600 dark:text-gray-400 text-sm uppercase tracking-wide text-center">
             <div>Discovery & Technical Assessment</div>
             <div>Architecture & System Design</div>
             <div>Secure Development & Audit</div>
@@ -144,12 +144,12 @@ export default function About() {
         </div>
 
         {/* CORE PRINCIPLES */}
-        <div className="p-14 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl mb-32">
-          <h2 className="text-2xl font-semibold mb-8 text-white">
+        <div className="p-14 rounded-3xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 backdrop-blur-xl mb-32">
+          <h2 className="text-2xl font-semibold mb-8 text-gray-900 dark:text-white">
             Security & Governance Framework
           </h2>
 
-          <ul className="space-y-4 text-gray-400">
+          <ul className="space-y-4 text-gray-600 dark:text-gray-400">
             {principles.map((item, index) => (
               <li key={index}>• {item}</li>
             ))}
@@ -157,12 +157,12 @@ export default function About() {
         </div>
 
         {/* MISSION */}
-        <div className="p-14 rounded-3xl border border-white/10 bg-gradient-to-r from-blue-600/10 to-purple-600/10 backdrop-blur-xl text-center">
-          <h2 className="text-3xl font-semibold mb-6 text-white">
+        <div className="p-14 rounded-3xl border border-gray-200 dark:border-white/10 bg-gradient-to-r from-blue-600/10 to-purple-600/10 backdrop-blur-xl text-center">
+          <h2 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">
             Our Mission
           </h2>
 
-          <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             To accelerate the global transition toward decentralized
             financial systems by delivering secure, scalable, and
             institution-ready blockchain infrastructure engineered

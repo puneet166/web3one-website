@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Contact() {
   return (
-    <section className="relative py-32 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-32 bg-white dark:bg-[#0b1120] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
@@ -21,7 +21,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <p className="text-sm tracking-widest uppercase text-gray-400 mb-4">
+          <p className="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-4">
             Let’s Connect
           </p>
 
@@ -29,7 +29,7 @@ export default function Contact() {
             Start Your Web3 Project
           </h1>
 
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 mt-6 max-w-2xl mx-auto">
             Whether you're building smart contracts, decentralized applications,
             or enterprise blockchain infrastructure — our engineering team is
             ready to collaborate.
@@ -42,11 +42,11 @@ export default function Contact() {
           {/* Left Info Panel */}
           <div className="space-y-10">
             <div>
-              <h2 className="text-2xl font-semibold mb-4 text-white">
+              <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
                 Why Work With Web3One?
               </h2>
 
-              <ul className="space-y-4 text-gray-400">
+              <ul className="space-y-4 text-gray-600 dark:text-gray-400">
                 <li>✔ Security-first smart contract architecture</li>
                 <li>✔ Scalable decentralized systems</li>
                 <li>✔ Enterprise-grade development standards</li>
@@ -55,11 +55,11 @@ export default function Contact() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">
+              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
                 Contact Information
               </h3>
-              <p className="text-gray-400">info@web3one.in</p>
-              <p className="text-gray-400">India • Global Delivery</p>
+              <p className="text-gray-600 dark:text-gray-400">info@web3one.in</p>
+              <p className="text-gray-600 dark:text-gray-400">India • Global Delivery</p>
             </div>
           </div>
 
@@ -68,30 +68,30 @@ export default function Contact() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="p-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl space-y-6 shadow-2xl"
+            className="p-10 rounded-3xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 backdrop-blur-xl space-y-6 shadow-2xl"
           >
 
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full p-4 bg-[#111827] border border-white/10 rounded-xl focus:outline-none focus:border-blue-500 transition"
+             className="w-full p-4 bg-white dark:bg-[#111827] border border-gray-300 dark:border-white/10 rounded-xl text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 transition"
             />
 
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full p-4 bg-[#111827] border border-white/10 rounded-xl focus:outline-none focus:border-blue-500 transition"
+              className="w-full p-4 bg-white dark:bg-[#111827] border border-gray-300 dark:border-white/10 rounded-xl text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 transition"
             />
 
             <textarea
               placeholder="Tell us about your project..."
               rows={6}
-              className="w-full p-4 bg-[#111827] border border-white/10 rounded-xl focus:outline-none focus:border-blue-500 transition"
+              className="w-full p-4 bg-white dark:bg-[#111827] border border-gray-300 dark:border-white/10 rounded-xl text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 transition"
             />
 
             <button
               type="submit"
-              className="w-full py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-[1.02] transition duration-300 shadow-lg hover:shadow-purple-500/40 font-medium"
+              className="w-full py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:scale-[1.02] transition duration-300 shadow-lg hover:shadow-purple-500/40 font-medium"
             >
               Send Message
             </button>

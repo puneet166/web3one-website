@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function CTA() {
   return (
-    <section className="relative py-10 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-20 bg-white dark:bg-[#0b1120] overflow-hidden">
 
       {/* Animated Background Glow */}
       <div className="absolute inset-0 -z-10">
@@ -19,11 +19,11 @@ export default function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="relative p-16 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl"
+          className="relative p-16 rounded-3xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 backdrop-blur-xl shadow-2xl"
         >
 
           {/* Micro Label */}
-          <p className="text-sm tracking-widest uppercase text-gray-400 mb-6">
+          <p className="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-6">
             Let’s Build Together
           </p>
 
@@ -33,7 +33,7 @@ export default function CTA() {
           </h2>
 
           {/* Description */}
-          <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12">
             Partner with Web3One to design secure smart contracts,
             scalable decentralized applications, and enterprise-grade
             blockchain systems built for long-term success.
@@ -46,7 +46,7 @@ export default function CTA() {
               Book Free Consultation
             </button>
 
-            <button className="px-10 py-4 border border-white/20 rounded-xl hover:bg-white/10 transition duration-300 font-medium">
+            <button className="px-10 py-4 border border-gray-300 dark:border-white/20 rounded-xl hover:bg-gray-200 dark:hover:bg-white/10 transition duration-300 font-medium">
               View Case Studies
             </button>
 

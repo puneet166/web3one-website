@@ -32,7 +32,7 @@ const reasons = [
 
 export default function WhyChoose() {
   return (
-    <section className="relative py-24 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-24 bg-white dark:bg-[#0b1120] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
@@ -50,7 +50,7 @@ export default function WhyChoose() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <p className="text-sm tracking-widest uppercase text-gray-400 mb-4">
+          <p className="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-4">
             Why Web3One
           </p>
 
@@ -58,7 +58,7 @@ export default function WhyChoose() {
             Built for Security. Designed for Scale.
           </h2>
 
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 mt-6 max-w-2xl mx-auto">
             We combine blockchain expertise, enterprise architecture principles,
             and long-term technical strategy to deliver mission-critical Web3 systems.
           </p>
@@ -78,7 +78,7 @@ export default function WhyChoose() {
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -6 }}
-                className="group p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:border-purple-500/40 hover:bg-white/10"
+                className="group p-8 rounded-2xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 backdrop-blur-xl transition-all duration-300 hover:border-purple-500/40 hover:bg-white/10"
               >
                 {/* Icon */}
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition">
@@ -86,12 +86,12 @@ export default function WhyChoose() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-400 transition">
+                <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition">
                   {reason.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-400 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   {reason.description}
                 </p>
               </motion.div>

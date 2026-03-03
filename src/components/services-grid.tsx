@@ -58,7 +58,7 @@ const sections = [
 
 export default function Services() {
   return (
-    <section className="relative py-32 bg-[#0b1120] overflow-hidden">
+    <section className="relative py-32 bg-white dark:bg-[#0b1120] overflow-hidden">
 
       {/* Gradient Background */}
       <div className="absolute inset-0 -z-10">
@@ -76,7 +76,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mb-24"
         >
-          <p className="text-sm tracking-widest uppercase text-gray-400 mb-4">
+          <p className="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-4">
             Enterprise Web3 Engineering
           </p>
 
@@ -84,7 +84,7 @@ export default function Services() {
             Mission-Critical Blockchain Infrastructure for Global Markets
           </h1>
 
-          <p className="text-gray-400 text-lg leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
             We architect and deploy secure, scalable, and production-grade
             blockchain systems powering exchanges, financial platforms,
             digital asset ecosystems, and next-generation Web3 products.
@@ -100,8 +100,8 @@ export default function Services() {
             { label: "Security-First Architecture", value: "100%" },
           ].map((item, index) => (
             <div key={index}>
-              <h3 className="text-4xl font-bold text-white mb-2">{item.value}</h3>
-              <p className="text-gray-400 text-sm uppercase tracking-wide">
+              <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">{item.value}</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm uppercase tracking-wide">
                 {item.label}
               </p>
             </div>
@@ -112,7 +112,7 @@ export default function Services() {
         <div className="space-y-32">
           {sections.map((section, i) => (
             <div key={i}>
-              <h2 className="text-3xl font-semibold text-white mb-14">
+              <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-14">
                 {section.title}
               </h2>
 
@@ -122,12 +122,12 @@ export default function Services() {
                     key={idx}
                     whileHover={{ y: -8 }}
                     transition={{ type: "spring", stiffness: 200 }}
-                    className="p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-blue-500/40 transition-all duration-300"
+                    className="p-8 rounded-2xl bg-gray-100 dark:bg-white/5 backdrop-blur-lg border border-gray-200 dark:border-white/10 hover:border-blue-500/40 transition-all duration-300"
                   >
-                    <h3 className="text-white text-xl font-semibold mb-4">
+                    <h3 className="text-gray-900 dark:text-white text-xl font-semibold mb-4">
                       {item.title}
                     </h3>
-                    <p className="text-gray-400 leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                       {item.desc}
                     </p>
                   </motion.div>
@@ -139,16 +139,16 @@ export default function Services() {
 
         {/* CTA Section */}
         <div className="mt-40 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
             Build the Future of Finance & Infrastructure
           </h2>
-          <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
             Partner with an engineering team specializing in
             secure blockchain architecture, scalable protocol
             design, and enterprise-grade Web3 systems.
           </p>
 
-          <button className="px-10 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold hover:opacity-90 transition">
+          <button className="px-10 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-gray-900 dark:text-white font-semibold hover:opacity-90 transition">
             Schedule Strategy Call
           </button>
         </div>

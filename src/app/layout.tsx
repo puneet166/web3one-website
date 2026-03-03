@@ -4,6 +4,7 @@ import WhatsAppButton from "@/components/whatsapp"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ContactFloating from "@/components/contact-floating"
+import { ThemeProvider } from "@/components/theme-provider"
 
 import { Inter, Space_Grotesk } from "next/font/google"
 
@@ -85,10 +86,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${space.variable} bg-[#0B0F1A] text-white antialiased`}
-      >
+   <html lang="en" suppressHydrationWarning>
+    <body className={`${inter.variable} ${space.variable} antialiased`}>
+      <ThemeProvider>
         <Navbar />
 
         {/* Structured Data */}
@@ -116,6 +116,8 @@ export default function RootLayout({
 
         <Footer />
 <ContactFloating />
+      </ThemeProvider>
+
       </body>
     </html>
   )
