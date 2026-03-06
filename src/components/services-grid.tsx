@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 
 import { motion } from "framer-motion"
 
@@ -8,48 +9,59 @@ const sections = [
     items: [
       {
         title: "Layer 1 Architecture",
+        link: "/services/blockchain-development",
         desc: "Custom blockchain architecture, consensus design, validator logic, token economics modeling, and full protocol deployment at production scale.",
       },
       {
         title: "Layer 2 & ZK Systems",
+        link: "/services/blockchain-development",
         desc: "Rollups, ZK-EVM implementations, modular scaling frameworks, cross-chain interoperability, and high-performance execution layers.",
       },
       {
         title: "Consensus R&D",
+        link: "/services/blockchain-development",
         desc: "Advanced proof-based systems, hybrid consensus, distributed validator optimization, and network performance engineering.",
       },
     ],
   },
+
   {
     title: "DeFi & Digital Asset Infrastructure",
     items: [
       {
         title: "Exchange Systems (CEX & DEX)",
+        link: "/services/defi-development",
         desc: "High-performance trading engines, liquidity orchestration, custody systems, settlement layers, and institutional-grade security architecture.",
       },
       {
         title: "Cross-Chain Bridges",
+        link: "/services/blockchain-development",
         desc: "Secure bridging protocols, decentralized interoperability frameworks, and multi-chain asset infrastructure.",
       },
       {
         title: "RWA Tokenization",
+        link: "/services/blockchain-development",
         desc: "Compliance-ready real-world asset tokenization platforms with fractional ownership and institutional asset management layers.",
       },
     ],
   },
+
   {
     title: "Smart Contracts & Web3 Platforms",
     items: [
       {
         title: "Smart Contract Engineering",
+        link: "/services/smart-contract-development",
         desc: "Audited smart contracts for DeFi, staking, governance, NFTs, DAOs, and advanced token standards.",
       },
       {
         title: "Ecosystem Infrastructure",
+        link: "/services/blockchain-development",
         desc: "Validator nodes, RPC architecture, blockchain explorers, indexing systems, and ecosystem tooling.",
       },
       {
         title: "Web3 Applications",
+        link: "/services/dapp-development",
         desc: "Full-stack dApps, wallets, dashboards, governance systems, and enterprise Web3 frontends.",
       },
     ],
@@ -95,7 +107,7 @@ export default function Services() {
         <div className="grid md:grid-cols-4 gap-10 mb-32 text-center">
           {[
             { label: "Protocols Engineered", value: "25+" },
-            { label: "TVL Infrastructure Built", value: "$500M+" },
+            { label: "TVL Infrastructure Built", value: "$50M+" },
             { label: "Global Clients", value: "40+" },
             { label: "Security-First Architecture", value: "100%" },
           ].map((item, index) => (
@@ -124,9 +136,12 @@ export default function Services() {
                     transition={{ type: "spring", stiffness: 200 }}
                     className="p-8 rounded-2xl bg-gray-100 dark:bg-white/5 backdrop-blur-lg border border-gray-200 dark:border-white/10 hover:border-blue-500/40 transition-all duration-300"
                   >
-                    <h3 className="text-gray-900 dark:text-white text-xl font-semibold mb-4">
+                    <Link
+                      href={item.link}
+                      className="block text-gray-900 dark:text-white text-xl font-semibold mb-4 hover:text-blue-500 transition"
+                    >
                       {item.title}
-                    </h3>
+                    </Link>
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                       {item.desc}
                     </p>

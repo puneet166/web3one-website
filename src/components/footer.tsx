@@ -82,19 +82,30 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4 text-sm uppercase tracking-wide">
-              Contact
-            </h4>
+       {/* Contact */}
+<div>
+  <h4 className="font-semibold text-gray-900 dark:text-white mb-4 text-sm uppercase tracking-wide">
+    Contact
+  </h4>
 
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-              info@web3one.in
-            </p>
+  <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+    info@web3one.in
+  </p>
 
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              India • Global Delivery
-            </p>
-          </div>
+  <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+    New Delhi, India • Global Delivery
+  </p>
+
+  {/* Map */}
+  <div className="w-full h-40 rounded-lg overflow-hidden border border-gray-200 dark:border-white/10 shadow-sm">
+    <iframe
+      src="https://www.google.com/maps?q=New%20Delhi%20India&output=embed"
+      className="w-full h-full border-0"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
 
         </div>
       </div>

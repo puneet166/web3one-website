@@ -1,3 +1,13 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Blockchain Case Studies | Web3One",
+  description:
+    "Explore Web3One case studies showcasing blockchain platforms, DeFi systems, smart contracts, and decentralized applications.",
+  alternates: {
+    canonical: "https://web3one.in/case-studies",
+  },
+}
 export default function CaseStudiesPage() {
   return (
     <section className="py-32 px-6 max-w-6xl mx-auto space-y-20">

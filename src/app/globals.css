@@ -53,3 +53,90 @@ html {
 .floating {
   animation: float 8s ease-in-out infinite;
 }
+
+
+.prose {
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* headings */
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.prose h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  scroll-margin-top: 100px;
+}
+
+.prose h3 {
+  margin-top: 2rem;
+}
+
+/* paragraphs */
+
+.prose p {
+  margin: 1.2rem 0;
+}
+
+/* lists */
+
+.prose ul {
+  margin: 1.5rem 0;
+  padding-left: 1.2rem;
+}
+
+.prose li {
+  margin: 0.5rem 0;
+}
+
+/* images */
+
+.prose img {
+  border-radius: 12px;
+}
+
+/* code */
+
+.prose pre {
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* links */
+
+.prose a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+/* mobile */
+
+@media (max-width:768px) {
+  .prose {
+    font-size: 16px;
+  }
+
+  .prose h1 {
+    font-size: 30px;
+  }
+
+  .prose h2 {
+    font-size: 24px;
+  }
+
+  .prose h3 {
+    font-size: 20px;
+  }
+}
